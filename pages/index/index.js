@@ -12,8 +12,8 @@ Page({
     canIUseGetUserProfile: false,
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), // 如需尝试获取用户信息可改为false
     swipers:['../../images/swiper/swiper1.png','../../images/swiper/swiper2.png','../../images/swiper/swiper3.png'],
-    imgs:['../../images/category/clothing1.png','../../images/category/clothing2.png','../../images/category/clothing3.png','../../images/category/pants.png','../../images/category/seckill.png','../../images/category/shoes.png','../../images/category/skirt.png','../../images/category/socks.png'],
-    imgName:['上装','外套','套装','裤装','秒杀','鞋','裙装','袜子'],
+    imgs:['../../images/category/clothing2.png','../../images/category/pants.png', '../../images/category/skirt.png','../../images/category/clothing1.png','../../images/category/clothing3.png','../../images/category/seckill.png','../../images/category/socks.png','../../images/category/shoes.png',],
+    imgName:['上装','裤装','裙装','套装','外套','秒杀','袜子','鞋',],
     goodsList: []
   },
   // 事件处理函数

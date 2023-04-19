@@ -8,7 +8,7 @@
     </swiper-item>
   </swiper>
 </view>
-  <view class="goods_price">￥{{goodsDetail.data[0].originalPrice}}</view>
+  <view class="goods_price">￥{{goodsDetail.data[0].minPrice}}</view>
 <view class="goods_name_row">
   <view class="goods_name">{{goodsDetail.data[0].characteristic}}</view>
   <!-- <view class="goods_collect" bindtap="handleCollect">

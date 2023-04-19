@@ -6,12 +6,13 @@
     "pages/user/index",
     "pages/search/index",
     "pages/goods_list/index",
-    "pages/goods_detail/index"
+    "pages/goods_detail/index",
+    "pages/goods_order/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#1CD8D2",
-    "navigationBarTitleText": "开心购",
+    "navigationBarTitleText": "购购购",
     "navigationBarTextStyle":"white"
   },
   "tabBar": {

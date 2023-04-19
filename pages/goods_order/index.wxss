@@ -1,0 +1,112 @@
+.goods-order{
+  width: 100vw;
+  height: 100vh;
+  background-color: #edece8;
+  padding: 10px;
+}
+
+.go-search {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: #fff; */
+  margin: 10px 0;
+}
+.gs-ipt {
+  width:60% !important;
+  height: 90% !important;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.gs-btn {
+  width: 30% !important;
+  height: 39px !important;
+  /* background-color: red; */
+}
+
+.order-info {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.oi-title {
+  display: flex;
+  justify-content:space-between ;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ot-pay-staus {
+  color: red;
+  font-size: 14px;
+}
+
+.oi-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oc-info-left, .oc-info-right {
+  flex: 1;
+  height: 50px;
+}
+
+.oc-info {
+  width: 60%;
+}
+
+.oc-desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tags {
+  display: flex;
+  font-size: 11px;
+}
+.oi-tags {
+  margin: 5px;
+  border-radius: 3px;
+  color: #f55909;
+  border: 1px solid #f55909;
+}
+.oc-info-right {
+  text-align: center;
+}
+
+.oi-tips {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 20px 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  color: red;
+  background-color: #f5e7e7;
+}
+
+.oi-btn {
+  float: right;
+  display: flex;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.ob-btn {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+ 
+.ob-continue {
+  color: #f55909;
+  border: 1px solid #f55909;
+}

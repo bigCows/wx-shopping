@@ -4,7 +4,6 @@ const service = Axios.create({
 })
 
 service.interceptors.request.use(function(config) {
-  console.log(config);
   return config
 },function(error) {
   return Promise.reject(error)

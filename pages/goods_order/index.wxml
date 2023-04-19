@@ -1,0 +1,59 @@
+<view class="goods-order">
+<view class="go-search">
+  <input class="gs-ipt" value="{{inpValue}}" placeholder="请输入您要搜索的商品" bindinput="handleInput"> </input>
+  <!-- <view class="gs-btn"> -->
+  <button class="gs-btn">搜索</button>
+  <!-- </view> -->
+</view>
+  <view class="order-info">
+    <view class="oi-title">
+      <view>
+        微信旗舰店
+      </view>
+      <view class="ot-pay-staus">
+        待付款
+      </view>
+    </view>
+
+    <!-- 内容 -->
+    <view class="oi-content">
+      <view class="oc-info-left">
+      <image src="https://cdn.it120.cc/apifactory/2019/06/25/ecdec852-d535-4183-b447-47fefa568e43.jpg" mode="" style="width: 100%;height: 100%;"/></view>
+      <view class="oc-info">
+      <view class="oc-desc">
+        哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+      </view>
+      <view class="tags">
+      <view class="oi-tags">
+      7天无理由退换货 
+      </view>
+      <view class="oi-tags">
+      破损包退
+      </view>
+      <view class="oi-tags">
+        15天保价
+      </view>
+      </view>
+      </view>
+      <view class="oc-info-right">
+      <view class="oir-price">
+        ￥12
+      </view>
+      <view class="oir-num">
+        X 2
+      </view>
+      </view>
+    </view>
+    <!-- tips -->
+    <view class="oi-tips">
+      订单即将关闭，请尽快付款
+    </view>
+
+    <!-- bottom-btn -->
+    <view class="oi-btn">
+    <view class="ob-btn">修改地址</view>
+    <view class="ob-btn">找朋友付</view>     
+    <view class="ob-btn ob-continue">继续付款</view>
+    </view>
+  </view>
+</view>

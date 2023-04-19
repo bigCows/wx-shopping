@@ -19,8 +19,10 @@
       <view class="orders_title">我的订单</view>
       <view class="order_content">
         <view class="order-view">
+        <navigator url="/pages/goods_order/index">
           <view class="iconfont icon-daifukuan"></view>
           <view class="order_name">待付款</view>
+        </navigator>
         </view>
         <view class="order-view">
           <view class="iconfont icon-daifahuo"></view>

@@ -29,12 +29,13 @@ Page({
    */
   onShow() {
     let pages = getCurrentPages();
+    console.log(pages,'pagesxxx');
     let currentPage = pages[pages.length - 1];
     let options = currentPage.options;
     const {
       id
     } = options;
-    console.log(id,'id');
+    console.log(id,'idxxxx');
     this.getGoodsDetail(id);
   },
 
