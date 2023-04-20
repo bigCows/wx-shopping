@@ -1,10 +1,10 @@
-<!-- <import src="/template/login/index.wxml" /> -->
+<import src="/template/login/index.wxml" />
 <view class="user_info_wrap">
-  <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
-    <image class="user_bg" src="{{userinfo.avatarUrl}}"></image>
+  <view wx:if="{{userInfo.avatarUrl}}" class="user_img_wrap">
+    <image class="user_bg" src="{{userInfo.avatarUrl}}"></image>
     <view class="user_info">
-      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
-      <view class="user_name">{{userinfo.nickName}}</view>
+      <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user_name">{{userInfo.nickName}}</view>
     </view>
   </view>
   <view wx:else class="user_btn">
@@ -55,4 +55,4 @@
     </view>
   </view>
 </view>
-<!-- <template is="apifmLogin" data="{{wxlogin: wxlogin}}" /> -->
+<template is="apifmLogin" data="{{wxlogin: wxlogin}}" />

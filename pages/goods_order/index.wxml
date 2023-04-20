@@ -1,27 +1,25 @@
 <view class="goods-order">
 <view class="go-search">
-  <input class="gs-ipt" value="{{inpValue}}" placeholder="请输入您要搜索的商品" bindinput="handleInput"> </input>
-  <!-- <view class="gs-btn"> -->
-  <button class="gs-btn">搜索</button>
-  <!-- </view> -->
+  <input class="gs-ipt" value="{{iptValue}}" bindinput="onInput" placeholder="请输入您要搜索的商品"> </input>
 </view>
-  <view class="order-info">
+<block wx:if="{{goodsOrderList.length > 0}}">
+  <view class="order-info" wx:for="{{goodsOrderList}}" wx:for-item="item" wx:for-index="index">
     <view class="oi-title">
       <view>
-        微信旗舰店
+        {{item.goods_shop_name}}
       </view>
       <view class="ot-pay-staus">
-        待付款
+        {{item.status}}
       </view>
     </view>
 
     <!-- 内容 -->
     <view class="oi-content">
       <view class="oc-info-left">
-      <image src="https://cdn.it120.cc/apifactory/2019/06/25/ecdec852-d535-4183-b447-47fefa568e43.jpg" mode="" style="width: 100%;height: 100%;"/></view>
+      <image src="{{item.goods_pic}}" style="width: 100%;height: 100%;"/></view>
       <view class="oc-info">
       <view class="oc-desc">
-        哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+        {{item.name}}
       </view>
       <view class="tags">
       <view class="oi-tags">
@@ -37,10 +35,10 @@
       </view>
       <view class="oc-info-right">
       <view class="oir-price">
-        ￥12
+        ￥{{item.goods_price}}
       </view>
       <view class="oir-num">
-        X 2
+        X {{item.goods_num}}
       </view>
       </view>
     </view>
@@ -56,4 +54,18 @@
     <view class="ob-btn ob-continue">继续付款</view>
     </view>
   </view>
+</block>
+
+
+<block wx:else>
+<view class="null">
+  
+  暂无订单
+</view>
+</block>
+<view>
+  
+</view>
+
+
 </view>

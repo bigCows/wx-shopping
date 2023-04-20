@@ -14,8 +14,16 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "订单",
+          "pathName": "pages/goods_order/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
-  }
+  },
+  "libVersion": "2.24.7"
 }
