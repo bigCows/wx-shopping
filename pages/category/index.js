@@ -34,8 +34,6 @@ Page({
       if (Date.now() - CatesName.time > 1000 * 10) {
         this.getCateGory()
       } else {
-        // 可以使用旧的数据
-        // const { custom = {} } = getApp().globalData;
         this.Cates = CatesList.data;
         let leftMenuList = CatesName.data;
         let rightContent = null;
@@ -56,7 +54,6 @@ Page({
   async getCateGory() {
     const {custom} = getApp().globalData;
     const {data} = await getCateGory()
-    console.log(data,'ssss');
     let leftMenuList = data.data.map(v => {
       return {
         id: v.id,
@@ -67,7 +64,6 @@ Page({
       time: Date.now(),
       data: leftMenuList
     });
-    console.log(leftMenuList,'leftMenuList');
     this.setData({
       leftMenuList: data
     })
@@ -78,17 +74,11 @@ Page({
       time: Date.now(),
       data: this.Cates
     });
-    console.log('cxcxcxcx');
     let rightContent = null;  
     if (custom) {
-      console.log(res.data,'xxxifififfifi');
       rightContent = res.data.data.filter(v => v.categoryId === custom.id)
-      console.log(rightContent,'rightContenyyyyyyyyyyyyyyyyy');
     } else {
-      console.log(res.data,'xxxxsadasdas');
-      console.log(this.data.leftMenuList.data[0].id,'this.data.leftMenuList');
       rightContent = res.data.data.filter(v => v.categoryId === this.data.leftMenuList.data[0].id)
-      console.log(rightContent,'rightContentxxxxxxxxxxx');
     }
     this.setData({
       rightContent,
@@ -109,7 +99,6 @@ Page({
     }
 
     let rightContent = this.Cates.filter(v => v.categoryId == id);
-    console.log(rightContent,'letrightContent');
     this.setData({
       currentIndex: index,
       rightContent,

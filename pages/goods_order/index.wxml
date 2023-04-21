@@ -35,10 +35,10 @@
       </view>
       <view class="oc-info-right">
       <view class="oir-price">
-        ￥{{item.goods_price}}
+        ￥{{item.goods_price * item.goods_num}}
       </view>
       <view class="oir-num">
-        X {{item.goods_num}}
+        × {{item.goods_num}}
       </view>
       </view>
     </view>

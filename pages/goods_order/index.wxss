@@ -60,10 +60,19 @@
 .oc-info-left, .oc-info-right {
   flex: 1;
   height: 50px;
+  margin-left: 10px;
 }
 
 .oc-info {
   width: 60%;
+}
+.oir-price {
+  font-weight: 600;
+}
+.oir-num {
+  margin-top: 5px;
+  color: #999;
+  font-size: 12px;
 }
 
 .oc-desc {

@@ -1,20 +1,5 @@
-<!-- pages/cart/index.wxml -->
-<!-- <import src="/template/login/index.wxml" /> -->
-<!-- <view class="revice_address_row">
-  <view class="address_btn" wx:if="{{!address.userName}}">
-    <button bindtap="handleChooseAddress" type="primary" plain="{{true}}">获取收获地址</button>
-  </view>
-  <view wx:else class="user_info_row">
-    <view class="user_info">
-      <view>{{address.userName}}</view>
-      <view>{{address.all}}</view>
-    </view>
-    <view class="user_phone">{{address.telNumber}}</view>
-  </view>
-</view> -->
 <!-- 购物车内容 -->
 <view class="cart_content">
-  <!-- <view class="cart_title">购物车</view> -->
   <view class="cart_main">
     <!-- 当cart数组 长度不为0 显示 商品信息 -->
  

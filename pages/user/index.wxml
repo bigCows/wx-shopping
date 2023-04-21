@@ -20,25 +20,25 @@
       <view class="order_content">
         <view class="order-view">
         <navigator url="/pages/goods_order/index">
-          <view class="iconfont icon-daifukuan"></view>
+          <image class="ov-goods-status" src="../../images/goods-status/dfk.png"/>
           <view class="order_name">待付款</view>
         </navigator>
         </view>
         <view class="order-view">
-          <view class="iconfont icon-daifahuo"></view>
+          <image class="ov-goods-status" src="../../images/goods-status/dfh.png"/>
           <view class="order_name">待发货</view>
         </view>
         <view class="order-view">
-          <view class="iconfont icon-ziyuan"></view>
+          <image class="ov-goods-status" src="../../images/goods-status/dsh.png"/>
           <view class="order_name">待收货</view>
         </view>
         <view class="order-view">
-          <view class="iconfont icon-daipingjia"></view>
+          <image class="ov-goods-status" src="../../images/goods-status/dpj.png" />
           <view class="order_name">待评价</view>
         </view>
         <view class="order-view">
-          <view class="iconfont icon-yiwancheng"></view>
-          <view class="order_name">已完成</view>
+          <image class="ov-goods-status" src="../../images/goods-status/sh.png" />
+          <view class="order_name">售后</view>
         </view>
       </view>
     </view>
