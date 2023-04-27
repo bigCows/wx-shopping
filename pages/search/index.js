@@ -23,16 +23,12 @@ Page({
     const id = 0
     const {data} = await getList(id)
     this.goodsList = data.data
-    console.log(data,'searchdata');
   },
 
   handleInput(e) {
-    console.log(e,'eee');
-    // console.log(this.data.goodsList, '<-this.data.goodsList->');
     const {
       value
     } = e.detail;
-    // console.log(value, '<-value->');
     if (!value.trim()) {
       this.setData({
         goods: [],

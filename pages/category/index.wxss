@@ -84,3 +84,9 @@ page {
   top: 50%;
   transform: translateX(-50%);
 }
+
+.no_goods_tips {
+  margin-top: 50%;
+  text-align: center;
+  color:  #999;
+}

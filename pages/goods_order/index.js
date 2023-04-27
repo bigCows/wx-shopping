@@ -27,7 +27,6 @@ Page({
            goodsOrderList:data.data.data
          })
         }
-        console.log(data,'goodsorder');
   },
   onInput(e) {
     const { value } = e.detail
@@ -42,7 +41,6 @@ Page({
            goodsOrderList:data.data.data
          })
         }
-        console.log(data,'goodsorder');
       }
     }, 1000);
   },
@@ -66,8 +64,6 @@ Page({
         cancelText: '暂不登录',
         confirmText: '确认登录',
         success(res) {
-          console.log(res,
-            'resss');
           if (res.confirm) {
             wx.switchTab({
               url: "/pages/user/index"

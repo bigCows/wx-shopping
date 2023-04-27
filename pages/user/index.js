@@ -8,6 +8,32 @@ Page({
     wxlogin: true,
   },
 
+    /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
+    const userInfo = wx.getStorageSync("userInfo");
+    if (!userInfo) {
+      this.setData({
+        wxlogin: false,
+        userInfo,
+      })
+    } else {
+      this.setData({
+        userInfo
+      })
+    }
+  },
+
+    /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+    let pages = getCurrentPages(); // 获取当前页面栈
+    let prevPage = pages[pages.length - 1]; // 获取本页面实例对象
+    prevPage.onLoad()
+  },
+
   login() {
     this.setData({
       wxlogin: false
@@ -18,7 +44,6 @@ Page({
     wx.getUserProfile({
       desc: "获取用户信息",
       success: (res) => {
-        console.log(res,'resinof');
         const {
           userInfo
         } = res;
@@ -31,7 +56,6 @@ Page({
         wx.login({
           async success (res) {
              if (res.code) {
-               console.log(that.userInfo,'xxxxxx');
              const data = await login(res.code,that.userInfo.nickName)
              } else {
                console.log('登录失败！' + res.errMsg)
@@ -57,25 +81,6 @@ Page({
     })
   },
 
-  
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-    const userInfo = wx.getStorageSync("userInfo");
-    if (!userInfo) {
-      this.setData({
-        wxlogin: false,
-        userInfo: {},
-      })
-    } else {
-      this.setData({
-        userInfo
-      })
-    }
-  },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -83,12 +88,6 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-   
-  },
 
   /**
    * 生命周期函数--监听页面隐藏

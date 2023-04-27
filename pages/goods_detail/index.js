@@ -15,24 +15,20 @@ Page({
    */
   onShow() {
     let pages = getCurrentPages();
-    console.log(pages,'pagesxxx');
     let currentPage = pages[pages.length - 1];
     let options = currentPage.options;
     const {
       id
     } = options;
-    console.log(id,'idxxxx');
     this.getGoodsDetail(id);
   },
 
   async getGoodsDetail(id) {
     const {data} = await getList(id)
-    console.log(data,'dataid');
     this.goodsDetail = data
     this.setData({
       goodsDetail: data
     })
-    console.log(this.goodsDetail,'goodsDetail');
   },
 
   handleCartAdd() {
